@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            height: 50px;
+            /* background-color: rgb(186, 238, 186); */
+            justify-content: center;
+            /* align-items: flex-end; */
+            align-items: stretch;
+            margin-bottom: 1px;
+
+        }
+
+        .flex-container>div#logo {
+            /* background-color: lightpink; */
+            width: 100px;
+            margin-left: 10px;
+            text-align: center;
+            line-height: 20px;
+            height: 20px;
+            font-size: 10px;
+        }
+
+        .flex-container>div.menu {
+            /* background-color: rgb(252, 204, 211); */
+            width: 100px;
+            margin: 10px 10px 10px 0px;
+            text-align: center;
+            line-height: 20px;
+            height: 20px;
+            font-size: 20px;
+
+        }
+
+        .hero-container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 275px;
+            background-color: rgb(186, 238, 186);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-container>div {
+            /* background-color: lightpink; */
+            width: 100%;
+            margin: 10px 10px 10px 10px;
+            text-align: center;
+            line-height: 100%;
+            height: 100%;
+            font-size: 15px;
+        }
+
+
+        .cards {
+            display: flex;
+            margin: 0px 5px 0px 5px;
+            height: 150px;
+            justify-content: space-between;
+        }
+
+        .card {
+            flex: 0 1 32%;
+            margin: 10px 10px 0px 10px;
+            text-align: center;
+            height: 100px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 4px 0px rgb(138, 136, 136);
+            background: rgb(247, 243, 243);
+
+        }
+
+        #pic {
+            display: flexbox;
+            margin: 10px 10px 10px 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div id="logo" style="flex-grow: 1;"><img src="https://i.picsum.photos/id/1012/100/25.jpg"></div>
+        <div class="menu" style="flex-grow: 2;"></div>
+        <div class="menu" style="flex-grow: 1;">Features</div>
+        <div class="menu" style="flex-grow: 1;">Prices</div>
+        <div class="menu" style="flex-grow: 1;">Resources</div>
+        <div class="menu" style="flex-grow: 1;">Enterprise</div>
+        <div class="menu" style="flex-grow: 1;">Blogs</div>
+        <!-- <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div> -->
+    </div>
+    <div class="hero-container">
+        <div id="pic"> <img src="https://i.picsum.photos/id/1012/800/250.jpg">
+        </div>
+    </div>
+    <div class="flex-cards">
+        <section class="cards">
+
+            <article class="card">
+                <p>Card 1</p>
+            </article>
+
+            <article class="card">
+                <p>Card 2</p>
+            </article>
+
+            <article class="card">
+                <p>Card 3</p>
+            </article>
+
+        </section>
+
+    </div>
+
+
+
+</body>
+
+</html>
